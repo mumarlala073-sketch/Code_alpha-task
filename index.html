@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Pro Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>✨ Modern Image Gallery</h1>
+    <p>Explore Categories, Click to Zoom, Enjoy the Aesthetic</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="city">City</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <div class="image" data-category="nature">
+      <img src="https://picsum.photos/600/400?random=1" alt="Nature">
+    </div>
+    <div class="image" data-category="city">
+      <img src="https://picsum.photos/600/400?random=2" alt="City">
+    </div>
+    <div class="image" data-category="animals">
+      <img src="https://picsum.photos/600/400?random=3" alt="Animals">
+    </div>
+    <div class="image" data-category="nature">
+      <img src="https://picsum.photos/600/400?random=4" alt="Nature">
+    </div>
+    <div class="image" data-category="city">
+      <img src="https://picsum.photos/600/400?random=5" alt="City">
+    </div>
+    <div class="image" data-category="animals">
+      <img src="https://picsum.photos/600/400?random=6" alt="Animals">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>Designed with 💖 Muhammad Umar khan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
